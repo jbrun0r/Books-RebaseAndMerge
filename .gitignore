@@ -1,0 +1,36 @@
+# macOS
+.DS_Store
+
+# Xcode
+build/
+DerivedData/
+*.xcworkspace/
+!*.xcworkspace/xcshareddata/
+!*.xcworkspace/xcuserdata/
+
+# Swift Package Manager
+.build/
+Package.resolved
+
+# App dependencies
+Pods/
+Podfile.lock
+
+# Compiled source
+*.dylib
+*.dll
+*.so
+*.o
+
+# Generated files
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+*.app.dSYM
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+
+# Xcode Private
+*.xcscmblueprint
