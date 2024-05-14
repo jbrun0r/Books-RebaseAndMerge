@@ -13,7 +13,7 @@ struct Books_RebaseAndMergeApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            BookListView()
         }
         .modelContainer(for: Book.self)
     }
