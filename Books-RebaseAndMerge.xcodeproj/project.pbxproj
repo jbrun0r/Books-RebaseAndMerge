@@ -7,20 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C7565BBD2BF3F71B007D6650 /* NewBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7565BBC2BF3F71B007D6650 /* NewBookView.swift */; };
+		C75CFCAE2BF67A9700FAC280 /* EditBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75CFCAD2BF67A9700FAC280 /* EditBookView.swift */; };
 		C7A266DB2BEE952800C6F9EF /* Books_RebaseAndMergeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A266DA2BEE952800C6F9EF /* Books_RebaseAndMergeApp.swift */; };
-		C7A266DD2BEE952800C6F9EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A266DC2BEE952800C6F9EF /* ContentView.swift */; };
-		C7A266DF2BEE952800C6F9EF /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A266DE2BEE952800C6F9EF /* Item.swift */; };
 		C7A266E12BEE952900C6F9EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7A266E02BEE952900C6F9EF /* Assets.xcassets */; };
 		C7A266E42BEE952900C6F9EF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7A266E32BEE952900C6F9EF /* Preview Assets.xcassets */; };
+		C7A266F62BEEA14D00C6F9EF /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A266F52BEEA14D00C6F9EF /* Book.swift */; };
+		C7A266FA2BEEA19C00C6F9EF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A266F92BEEA19C00C6F9EF /* Extensions.swift */; };
+		C7A266FD2BEEB01D00C6F9EF /* BookListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A266FC2BEEB01D00C6F9EF /* BookListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C7565BBC2BF3F71B007D6650 /* NewBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBookView.swift; sourceTree = "<group>"; };
+		C75CFCAD2BF67A9700FAC280 /* EditBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditBookView.swift; sourceTree = "<group>"; };
 		C7A266D72BEE952800C6F9EF /* Books-RebaseAndMerge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Books-RebaseAndMerge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7A266DA2BEE952800C6F9EF /* Books_RebaseAndMergeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Books_RebaseAndMergeApp.swift; sourceTree = "<group>"; };
-		C7A266DC2BEE952800C6F9EF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		C7A266DE2BEE952800C6F9EF /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		C7A266E02BEE952900C6F9EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7A266E32BEE952900C6F9EF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C7A266F52BEEA14D00C6F9EF /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		C7A266F92BEEA19C00C6F9EF /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C7A266FC2BEEB01D00C6F9EF /* BookListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,10 +60,13 @@
 			isa = PBXGroup;
 			children = (
 				C7A266DA2BEE952800C6F9EF /* Books_RebaseAndMergeApp.swift */,
-				C7A266DC2BEE952800C6F9EF /* ContentView.swift */,
-				C7A266DE2BEE952800C6F9EF /* Item.swift */,
 				C7A266E02BEE952900C6F9EF /* Assets.xcassets */,
 				C7A266E22BEE952900C6F9EF /* Preview Content */,
+				C7A266F52BEEA14D00C6F9EF /* Book.swift */,
+				C7A266F92BEEA19C00C6F9EF /* Extensions.swift */,
+				C7A266FC2BEEB01D00C6F9EF /* BookListView.swift */,
+				C7565BBC2BF3F71B007D6650 /* NewBookView.swift */,
+				C75CFCAD2BF67A9700FAC280 /* EditBookView.swift */,
 			);
 			path = "Books-RebaseAndMerge";
 			sourceTree = "<group>";
@@ -140,8 +149,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7A266DD2BEE952800C6F9EF /* ContentView.swift in Sources */,
-				C7A266DF2BEE952800C6F9EF /* Item.swift in Sources */,
+				C7A266FA2BEEA19C00C6F9EF /* Extensions.swift in Sources */,
+				C7A266F62BEEA14D00C6F9EF /* Book.swift in Sources */,
+				C7A266FD2BEEB01D00C6F9EF /* BookListView.swift in Sources */,
+				C75CFCAE2BF67A9700FAC280 /* EditBookView.swift in Sources */,
+				C7565BBD2BF3F71B007D6650 /* NewBookView.swift in Sources */,
 				C7A266DB2BEE952800C6F9EF /* Books_RebaseAndMergeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
