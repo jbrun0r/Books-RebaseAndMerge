@@ -37,6 +37,12 @@ struct BookListView: View {
                                 }
                             }
                         }
+                        .onDelete { indexSet in
+                            for index in indexSet {
+                                let book = books[index]
+                                context.delete(book)
+                            }
+                        }
                     }
                 }
                 else {
