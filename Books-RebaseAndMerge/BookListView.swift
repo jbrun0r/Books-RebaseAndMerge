@@ -20,15 +20,19 @@ struct BookListView: View {
                 if !books.isEmpty {
                     List{
                         ForEach(books) { book in
-                            HStack(spacing: 16) {
-                                VStack(alignment: .leading) {
-                                    Text(book.title)
-                                        .font(.title)
-                                    HStack(spacing: 8) {
-                                        Text(book.author)
-                                            .foregroundStyle(.secondary)
-                                        Text(book.publisher)
-                                            .foregroundStyle(.secondary)
+                            NavigationLink{
+                                EditBookView(book: book)
+                            } label: {
+                                HStack(spacing: 16) {
+                                    VStack(alignment: .leading) {
+                                        Text(book.title)
+                                            .font(.title)
+                                        HStack(spacing: 8) {
+                                            Text(book.author)
+                                                .foregroundStyle(.secondary)
+                                            Text(book.publisher)
+                                                .foregroundStyle(.secondary)
+                                        }
                                     }
                                 }
                             }
